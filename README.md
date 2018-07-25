@@ -4,10 +4,10 @@
 var passesValidation = AsnValidator.Validate("xmlSchema.xsd", "xmlFile.xml", out var validationExceptionMessage);
 
 if (!passesValidation) {
-  Console.Writeline("Validation failed");
-  Console.Writeline(validationExceptionMessage);
+  Console.WriteLine("Validation failed");
+  Console.WriteLine(validationExceptionMessage);
 } else
 {
-  Console.Writeline("XML file is valid");
+  Console.WriteLine("XML file is valid");
 }
 ```
